@@ -12,12 +12,12 @@
 		<nav>
 			<h1>Ego.<span style="color:#8B7484;">Blog</span></h1>
 			<ul>
-				<li><a href="" class="selected">Home</a></li>
+				<li><a href="#" class="selected">Home</a></li>
 				<li><a href="blog/index.html">Biografi</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
+	<main id="main">
 		<article>
 			<div class="detail">
 				<h1>Hai, Saya <br>Ego Irfandi <br> Seorang Mahasiswa</h1>
@@ -34,6 +34,17 @@
 			</div>
 			<img src="asset/gw.png" width="320" height="400" class="hero">
 		</article>
+		<section>
+			<form action="https://api.web3forms.com/submit" method="post" class="pesan" id="form-pesan">
+				<h2>Kirim Email</h2>
+				<input type="hidden" name="access_key" value="d997a02e-4055-458a-9820-47e795aa8d36">
+				<input type="text" name="name" class="name" placeholder="Kimi no Namaewa" >
+				<input type="email" name="email" class="email" placeholder="Your email">
+				<input type="number" name="wa" class="wa" placeholder="Whatsap no">
+				<textarea name="message" class="message" cols="30" rows="10" placeholder="Your message"></textarea>
+				<button type="submit" class="tombol-pesan">Send</button>
+			</form>	
+		</section>
 		<aside>
 			<div class="sticky-container">
 				<ul class="sticky">
@@ -70,5 +81,5 @@
 	<footer class="footer">
 		<center>&#169 2024 Create with Melancholy<span style="color:red;">&#9829</span> by Irfandi.y.y.y</center>	
 	</footer>
-</body>
-</html>
+	</html>
+	
