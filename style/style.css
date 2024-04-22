@@ -221,7 +221,7 @@ section form{
 	.detail{
 		margin: 0 1rem;
 	}
-	section form input {
+	section form input, section form textarea {
 		width: 85vw;
 		height: 3rem;
 		font-size: 16px;
