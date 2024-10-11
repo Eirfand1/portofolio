@@ -11,9 +11,10 @@
 	<header>
 		<nav>
 			<h1>Ego.<span style="color:#8B7484;">Blog</span></h1>
-			<ul>
+			<div class="menu-icon" id="menuIcon">&#9776;</div>
+			<ul id="navMenu">
 				<li><a href="#" class="selected">Home</a></li>
-				<li><a href="blog/index.html">Biografi</a></li>
+				<li><a href="blog">Biografi</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -34,7 +35,35 @@
 			</div>
 			<img src="asset/gw.png" width="320" height="400" class="hero">
 		</article>
-		<section>
+		
+		<section id="portfolio" class="portfolio-section">
+			<h2>Portfolio</h2>
+			<div class="portfolio-grid">
+				<div class="portfolio-item" data-id="1">
+					<img src="asset/pokemon.png" alt="Project 1">
+					<h3>Project 1</h3>
+				</div>
+				<div class="portfolio-item" data-id="2">
+					<img src="asset/bookshelf.png" alt="Project 2">
+					<h3>Project 2</h3>
+				</div>
+				<div class="portfolio-item" data-id="3">
+					<img src="asset/cahkerjo.png" alt="Project 3">
+					<h3>Project 3</h3>
+				</div>
+			</div>
+		</section>
+
+		<div id="portfolioModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2 id="modalTitle"></h2>
+				<img id="modalImage" src="" alt="Project Image">
+				<p id="modalDescription"></p>
+			</div>
+		</div>
+
+		<section class="form-section">
 			<form action="https://api.web3forms.com/submit" method="post" class="pesan" id="form-pesan">
 				<h2>Kirim Email</h2>
 				<input type="hidden" name="access_key" value="d997a02e-4055-458a-9820-47e795aa8d36">
@@ -45,6 +74,7 @@
 				<button type="submit" class="tombol-pesan">Send</button>
 			</form>	
 		</section>
+		
 		<aside>
 			<div class="sticky-container">
 				<ul class="sticky">
@@ -81,5 +111,6 @@
 	<footer class="footer">
 		<center>&#169 2024 Create with Melancholy<span style="color:red;">&#9829</span> by Irfandi.y.y.y</center>	
 	</footer>
-	</html>
-	
+	<script src="./js/script.js"></script>
+</body>
+</html>
