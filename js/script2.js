@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', ()=> {
    const menuIcon = document.getElementById('menuIcon');
    const navMenu = document.getElementById('navMenu');
    
-   menuIcon.addEventListener('click', function() {
+   menuIcon.addEventListener('click', ()=> {
       navMenu.classList.toggle('show');
    });
 });
